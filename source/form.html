@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f06351">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Cat Energy</title>
+</head>
+<body>
+<header class="header header--inside">
+  <div class="container header__container">
+    <div class="logo">
+      <a class="logo__symbol" href="/">
+        <picture>
+          <source media="(max-width: 480px)" srcset="/assets/images/logo-symbol-mobile.svg">
+          <source media="(min-width: 480px)" srcset="/assets/images/logo-symbol-desktop.svg">
+          <img class="image" src="/assets/images/logo-symbol-mobile.svg" alt="Символ Cat Energy">
+        </picture>
+      </a>
+      <a class="logo__brand" href="/">
+        <img class="image" src="/assets/images/logo-brand.svg" alt="Бренд Cat Energy">
+      </a>
+    </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu-item" href="#">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-item" href="#">Каталог продукции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-item" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="hamburger" type="button">
+      <img class="image" src="/assets/images/icon-hamburger.svg" alt="Меню">
+    </button>
+  </div>
+</header>
+<main class="main">
+  <section class="title">
+    <div class="container title__container">
+      <h1 class="heading heading--one">Подбор программы</h1>
+      <p class="title__description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+    </div>
+  </section>
+  <div class="checkout">
+    <div class="container checkout__container">
+      <div class="checkout__row">
+        <div class="checkout-personal">
+          <div class="checkout-personal__info">
+            <div class="input-row">
+              <label for="name" class="label">Имя:*</label>
+              <input id="name" name="name" type="text" value="Барсик" required>
+            </div>
+            <div class="input-row">
+              <label for="weight" class="label">Вес (кг):*</label>
+              <input id="weight" name="weight" type="number" value="7" min="1" required>
+            </div>
+            <div class="input-row">
+              <label for="age" class="label">Возраст (лет):</label>
+              <input id="age" name="age" type="number" value="7" min="1">
+            </div>
+          </div>
+          <div class="checkout-types">
+            <div class="checkout-types__row">
+              <label class="radio">
+                <span class="radio__title">Похудение</span>
+                <input type="radio" name="type" value="Похудение" checked>
+              </label>
+            </div>
+            <div class="checkout-types__row">
+              <label class="radio">
+                <span class="radio__title">Набор массы</span>
+                <input type="radio" name="type" value="Набор массы">
+              </label>
+            </div>
+            <div class="checkout-types__row">
+              <label class="radio">
+                <span class="radio__title">Не знаю (Нужен ваш совет)</span>
+                <input type="radio" name="type" value="Не знаю (Нужен ваш совет)">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkout__row">
+        <div class="checkout-contacts">
+          <h3 class="heading heading--three heading--divider">Контактные данные (владельца кота)</h3>
+          <div class="input-row">
+            <label for="email" class="label">E-mail:*</label>
+            <input id="email" name="email" type="email" value="kuklachev@gmail.com" required>
+            <i class="input-row__icon">
+              <img src="" alt="">
+            </i>
+          </div>
+          <div class="input-row">
+            <label for="phone" class="label">Телефон:*</label>
+            <input id="phone" name="phone" type="tel" value="8 (960) 900-60-90" required>
+            <i class="input-row__icon">
+              <img src="" alt="">
+            </i>
+          </div>
+        </div>
+      </div>
+      <div class="checkout__row">
+        <div class="checkout-comment">
+          <h3 class="heading heading--three heading--divider">Комментарий</h3>
+          <textarea class="input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+      </div>
+      <div class="checkout__row">
+        <div class="checkout-details">
+          <h3 class="heading heading--three heading--divider">Дополнительно</h3>
+          <div class="checkout-details__variants">
+            <label class="checkbox">
+              <span class="checkbox__title">Сахарозаменитель</span>
+              <input type="checkbox" name="details" value="Сахарозаменитель" checked>
+            </label>
+            <label class="checkbox">
+              <span class="checkbox__title">Питьевая вода</span>
+              <input type="checkbox" name="details" value="Питьевая вода">
+            </label>
+            <label class="checkbox">
+              <span class="checkbox__title">Молоко</span>
+              <input type="checkbox" name="details" value="Молоко">
+            </label>
+            <label class="checkbox">
+              <span class="checkbox__title">Витамины</span>
+              <input type="checkbox" name="details" value="Витамины">
+            </label>
+          </div>
+          <div class="checkout-details__submit">
+            <button class="button" type="submit">Отправить заявку</button>
+            <p class="checkout-details__notice">* — Обязательные поля</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="container contacts__container">
+      <div class="contacts-content">
+        <div class="contacts-content__heading">
+          приглашаем к сотрудничеству дилеров!
+        </div>
+        <div class="contacts-content__address">
+          <div class="contacts-content-address">
+            <div class="contacts-content-address__street">ул. Большая Конюшенная, д. 19/8</div>
+            <div class="contacts-content-address__city">Санкт-Петербург</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts__map" id="map"></div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer__container">
+    <a class="footer-logo" href="/">
+      <img src="/assets/images/logo-brand.svg" alt="Cat Energy">
+    </a>
+    <ul class="socials">
+      <li class="socials__item">
+        <a href="#"><img src="" alt="Вконтакте"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#"><img src="" alt="Youtube"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#"><img src="" alt="Telegram"></a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <span class="copyright__title">HTML Academy</span>
+      <a class="copyright__logo" href="#">
+        <img src="" alt="Лого HTML Academy">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
